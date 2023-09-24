@@ -27,11 +27,10 @@
 
         img.preview {
             max-width: 100%;
-            max-height: 100%; /* Sesuaikan dengan tinggi form */
-            margin: auto; /* Margin di atas dan bawah gambar */
+            max-height: 100%;
+            margin: auto;
         }
 
-        /* Letakkan tombol "Left" dan "Right" di bawah border form upload */
         .btn-group {
             position: absolute;
             bottom: -60px;
@@ -39,9 +38,8 @@
             transform: translateX(-50%);
         }
 
-        /* Tambahkan gaya untuk tombol "Submit" INI DIGANTI */
         .submit-button {
-            margin-top: 10px; /* Berikan jarak dari label "Unggah Gambar" */
+            margin-top: 10px;
             padding: 10px;
             background-color: #007bff;
             color: #ffffff;
@@ -54,7 +52,6 @@
             background-color: #0056b3;
         }
 
-        /* Gaya untuk label keluar (output-label) */
         .output-label {
             width: 45vmax;
         }
@@ -73,18 +70,15 @@
                 <button type="submit" class="btn btn-outline-primary submit-button" id="submitButton" style="display:none;">Submit</button>
               </div>
           </form>
-          
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6" style="border:1px solid#ddd">
         <div class="output-label">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">{{ predictions }}</textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" readonly>{{ predictions }}</textarea>
         </div>
       </div>
     </div>
   </div>
-
-  
 
     <script>
         document.getElementById("image").addEventListener("change", function () {
@@ -105,7 +99,6 @@
             }
         });
         
-        // Tambahkan event click untuk tombol "Left" (Unggah Gambar)
         document.getElementById("uploadButton").addEventListener("click", function () {
             document.getElementById("image").click();
         });
