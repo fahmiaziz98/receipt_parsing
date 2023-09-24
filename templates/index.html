@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Unggah Gambar</title>
+    <title>Receipt Parsing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         .upload-container {
@@ -66,10 +66,10 @@
       <div class="col-xl-6 col-lg-6 col-md-6" style="border:1px solid#ddd">
         <div class="upload-container">
           <form class="upload-form" action="/" method="post" enctype="multipart/form-data">
-              <input type="file" id="gambar" name="gambar" class="upload-input" accept="image/*">
+              <input type="file" id="image" name="image" class="upload-input" accept="image/*">
               <img id="preview" class="preview" src="#" alt="Preview Gambar" style="display:none;">
               <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary unggah-button" id="unggahButton">Upload</button>
+                <button type="button" class="btn btn-outline-primary unggah-button" id="uploadButton">Upload</button>
                 <button type="submit" class="btn btn-outline-primary submit-button" id="submitButton" style="display:none;">Submit</button>
               </div>
           </form>
@@ -87,10 +87,10 @@
   
 
     <script>
-        document.getElementById("gambar").addEventListener("change", function () {
+        document.getElementById("image").addEventListener("change", function () {
             var input = this;
             var preview = document.getElementById("preview");
-            var unggahButton = document.getElementById("unggahButton");
+            var unggahButton = document.getElementById("uploadButton");
             var submitButton = document.getElementById("submitButton");
 
             if (input.files && input.files[0]) {
@@ -106,8 +106,8 @@
         });
         
         // Tambahkan event click untuk tombol "Left" (Unggah Gambar)
-        document.getElementById("unggahButton").addEventListener("click", function () {
-            document.getElementById("gambar").click();
+        document.getElementById("uploadButton").addEventListener("click", function () {
+            document.getElementById("image").click();
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

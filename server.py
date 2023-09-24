@@ -9,7 +9,7 @@ def index():
     if request.method == 'GET':
         return render_template('index.html', predictions=None)
     elif request.method == 'POST' and request.files:
-        file_image = request.files['gambar']
+        file_image = request.files['image']
         if file_image:
             predictions = get_predictions(file_image)
             return render_template("index.html", predictions=predictions)
