@@ -1,6 +1,6 @@
 # Receipt Parsing
 
-This project demonstrates how to use the Donut dataset with CORD (COnceptual RecOvery of Documents) to perform receipt parsing. Receipt parsing involves extracting structured information from photographed receipts, such as itemized lists and totals.
+This project demonstrates how to use the Donut model with CORD dataset to perform receipt parsing. Receipt parsing involves extracting structured information from photographed receipts, such as itemized lists and totals.
 
 ## Overview
 
