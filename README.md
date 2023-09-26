@@ -12,6 +12,7 @@ This project demonstrates how to use the Donut model with CORD dataset to perfor
 To run this project, you need:
 
 - Python 3.7+
+- PyTorch
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 - [flask](https://flask.palletsprojects.com/en/2.3.x/installation/#install-flask)
