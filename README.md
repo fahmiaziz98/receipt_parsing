@@ -13,6 +13,7 @@ To run this project, you need:
 
 - Python 3.7+
 - PyTorch
+- PyTorch-Lightning
 - [Hugging Face Transformers](https://huggingface.co/transformers/)
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 - [flask](https://flask.palletsprojects.com/en/2.3.x/installation/#install-flask)
@@ -40,5 +41,5 @@ Here are some highlights of the training and evaluation process:
 Feel free to explore the details of the training and evaluation results in WandB to gain more insight into our model's performance.
 
 ## Demonstration
-[<img src="https://www.philschmid.de/static/blog/fine-tuning-donut/logo.png" width="50%">](https://youtu.be/4dclAXt4EQw "Receipt Parsing")
+[<img src="https://www.philschmid.de/static/blog/fine-tuning-donut/logo.png">](https://youtu.be/4dclAXt4EQw "Receipt Parsing")
 
