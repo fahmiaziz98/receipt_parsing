@@ -25,17 +25,18 @@ We trained and evaluated our receipt parsing model using the Donut model with CO
 
 ![Model Training](evaluation.png)
 
-Here are some highlights from the training and evaluation process:
+Here are some highlights of the training and evaluation process:
 
 - **Dataset**: We used the CORD dataset, which includes a diverse collection of receipts and invoices.
 
-- **Model**: Our model is based on the `fahmiaziz/finetune-donut-cord-v2.5` architecture, fine-tuned specifically for receipt parsing.
+- **Model**: Our model is based on the [fahmiaziz/finetune-donut-cord-v2.5](https://huggingface.co/fahmiaziz/finetune-donut-cord-v2.5) architecture that has been fine-tuned from [donut-base](https://huggingface.co/naver-clova-ix/donut-base) and customized specifically for receipt parsing.
 
-- **Training Metrics**: During training, we monitored various metrics, including accuracy, Tree Edit Distance (Tree ED) to ensure the model's performance.
+- **Training Metrics**: During training, we monitor various metrics, including accuracy, Tree Edit Distance (Tree ED) to ensure model performance.
 
-- **Evaluation**: Our model achieved an accuracy of over 90% on the test dataset, demonstrating its effectiveness in parsing receipts.
+- **Evaluation**: Our model achieved over 90% accuracy on the test dataset, demonstrating its effectiveness in parsing receipts.
 
 - **Visualization**: The training and evaluation process can be visualized through the WandB dashboard linked above.
 
-Feel free to explore the training details and evaluation results on WandB for more insights into our model's performance.
+Feel free to explore the details of the training and evaluation results in WandB to gain more insight into our model's performance.
 
+## Demonstration
