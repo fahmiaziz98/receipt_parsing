@@ -40,5 +40,5 @@ Here are some highlights of the training and evaluation process:
 Feel free to explore the details of the training and evaluation results in WandB to gain more insight into our model's performance.
 
 ## Demonstration
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4dclAXt4EQw" frameborder="0" allowfullscreen></iframe>
+[<img src="https://www.philschmid.de/static/blog/fine-tuning-donut/logo.png" width="50%">](https://youtu.be/4dclAXt4EQw "Receipt Parsing")
 
