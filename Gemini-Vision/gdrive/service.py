@@ -1,6 +1,9 @@
 import os
 from googleapiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
+import logging
+
+logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
 
 class GoogleDriveService:
 
@@ -12,6 +15,12 @@ class GoogleDriveService:
         
         # The name of the file containing your credentials
         credential_path = os.path.join(base_path, "gdrive.json")
+        if not os.path.exists(credential_path):
+            logging.error(
+                "Google Drive connection credentials are not found! They need to be stored here {}".format(
+                    credential_path
+                )
+            )
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credential_path
 
     def build(self):
