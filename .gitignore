@@ -1,3 +1,7 @@
 # Ignore __pycache__ directories and .pyc files
 __pycache__/
 *.py[cod]
+
+# Ignode pdf
+data_transform/
+*.pdf
