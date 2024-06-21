@@ -56,22 +56,22 @@ class JpegBytesToImage(FileBytesToImage):
         return text_data
 
  
-if __name__ == "__main__":
-    # Example usage
-    # Assuming you have a PDF or JPEG file in bytes
+# if __name__ == "__main__":
+#     # Example usage
+#     # Assuming you have a PDF or JPEG file in bytes
 
-    # Read a PDF file as bytes
-    with open("Get Paid Now Confirmation.pdf", "rb") as f:
-        pdf_bytes = f.read()
+#     # Read a PDF file as bytes
+#     with open("Get Paid Now Confirmation.pdf", "rb") as f:
+#         pdf_bytes = f.read()
 
-    # # Read a JPEG file as bytes
-    # with open("example.jpeg", "rb") as f:
-    #     jpeg_bytes = f.read()
+#     # # Read a JPEG file as bytes
+#     # with open("example.jpeg", "rb") as f:
+#     #     jpeg_bytes = f.read()
 
-    # Convert PDF bytes to JPEG and extract text
-    pdf_to_image = PDFBytesToImage()
-    pdf_jpeg = pdf_to_image.convert_bytes_to_jpeg(pdf_bytes)
-    pdf_text = pdf_to_image.convert_bytes_to_text(pdf_bytes)
+#     # Convert PDF bytes to JPEG and extract text
+#     pdf_to_image = PDFBytesToImage()
+#     pdf_jpeg = pdf_to_image.convert_bytes_to_jpeg(pdf_bytes)
+#     pdf_text = pdf_to_image.convert_bytes_to_text(pdf_bytes)
 
-    print("Extracted text from PDF:")
-    print(pdf_text)
+#     print("Extracted text from PDF:")
+#     print(pdf_text)
