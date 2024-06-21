@@ -3,5 +3,5 @@ __pycache__/
 *.py[cod]
 
 # Ignode pdf
-data_transform/
+data_transform/file/
 *.pdf
